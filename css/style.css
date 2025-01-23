@@ -209,6 +209,7 @@ a {
 body {
   font-family: Roboto;
   color: #626262;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -1831,6 +1832,18 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+}
+
+@media (max-width: 429px) {
+  .wrapper {
+    -webkit-transform: scale(80%);
+        -ms-transform: scale(80%);
+            transform: scale(80%);
+    -webkit-transform-origin: 20% top;
+        -ms-transform-origin: 20% top;
+            transform-origin: 20% top;
+    width: 430px;
+  }
 }
 
 .webp .info__list{ background: url(../img/info-baner.webp) no-repeat; }
