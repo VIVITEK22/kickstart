@@ -1846,6 +1846,10 @@ body {
     width: 430px;
   }
 
+  .chart {
+    border: 2px dashed rgb(194, 194, 194);
+  }
+
   .reviews {
     border: 2px dashed rgb(90, 176, 177);
   }
