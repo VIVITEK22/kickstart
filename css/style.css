@@ -210,6 +210,7 @@ body {
   font-family: Roboto;
   color: #626262;
   overflow-x: hidden;
+  position: relative;
 }
 
 .wrapper {
@@ -1839,10 +1840,18 @@ body {
     -webkit-transform: scale(80%);
         -ms-transform: scale(80%);
             transform: scale(80%);
-    -webkit-transform-origin: 10% top;
-        -ms-transform-origin: 10% top;
-            transform-origin: 10% top;
+    -webkit-transform-origin: 21% top;
+        -ms-transform-origin: 21% top;
+            transform-origin: 21% top;
     width: 430px;
+  }
+
+  .reviews {
+    border: 2px dashed rgb(90, 176, 177);
+  }
+
+  .questions {
+    border: 2px dashed rgb(90, 176, 177);
   }
 }
 
