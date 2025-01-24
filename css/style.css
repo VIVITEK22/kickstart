@@ -104,7 +104,6 @@ a {
 
 @font-face {
   font-family: OpenSans;
-  font-display: swap;
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -112,7 +111,6 @@ a {
 
 @font-face {
   font-family: OpenSans;
-  font-display: swap;
   src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
@@ -120,7 +118,6 @@ a {
 
 @font-face {
   font-family: OpenSans;
-  font-display: swap;
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -128,7 +125,6 @@ a {
 
 @font-face {
   font-family: OpenSans;
-  font-display: swap;
   src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -136,7 +132,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/Roboto-BlackItalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
@@ -144,7 +139,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
@@ -152,7 +146,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-BoldItalic.woff2") format("woff2"), url("../fonts/Roboto-BoldItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
@@ -160,7 +153,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -168,7 +160,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
@@ -176,7 +167,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Roboto-ExtraBoldItalic.woff") format("woff");
   font-weight: 800;
   font-style: italic;
@@ -184,7 +174,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -192,7 +181,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -200,7 +188,6 @@ a {
 
 @font-face {
   font-family: Roboto;
-  font-display: swap;
   src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -358,15 +345,6 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-color: #fff;
-}
-
-.header__burger--active {
-  position: fixed;
-  top: 26px;
-  padding: 14px 11px;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2);
-          box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2);
 }
 
 .header__burger-span {
@@ -586,6 +564,9 @@ body {
   background-position-x: -2px !important;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .info__advantage-text {
@@ -593,6 +574,7 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
+  color: #3F3F3F;
 }
 
 .info__advantage-vector {
@@ -653,10 +635,12 @@ body {
   text-align: center;
 }
 
+.no-webp .chart{
+  background: url("../img/chart-bg.png") no-repeat center; }
+
 .chart {
   margin: 10px;
-  border: 2px dashed rgb(194, 194, 194);
-  border-radius: 18px;
+  padding-top: 32px;
 }
 
 .chart__title {
@@ -665,6 +649,7 @@ body {
   line-height: 28px;
   text-align: center;
   padding: 20px;
+  padding-top: 0;
 }
 
 .chart__title-desc {
@@ -672,6 +657,7 @@ body {
   font-weight: 300;
   line-height: 28px;
   padding: 0 20px 20px 20px;
+  color: #3F3F3F;
 }
 
 .chart__image {
@@ -684,6 +670,7 @@ body {
   font-weight: 300;
   line-height: 28px;
   padding: 20px;
+  color: #3F3F3F;
 }
 
 .chat {
@@ -723,8 +710,11 @@ body {
           justify-content: space-between;
 }
 
+.no-webp .chat__body > span{
+  background: url("../img/line.png") no-repeat center; }
+
 .chat__body > span {
-  border: 1px dashed rgb(194, 194, 194);
+  height: 2px;
   z-index: 1;
   width: 67px;
   position: absolute;
@@ -808,7 +798,7 @@ body {
 .programs__title-value {
   font-size: 64px;
   font-weight: 900;
-  line-height: 30px;
+  line-height: 53px;
   text-align: center;
 }
 
@@ -852,7 +842,7 @@ body {
 .formats__title-value {
   font-size: 64px;
   font-weight: 900;
-  line-height: 30px;
+  line-height: 53px;
   text-align: center;
 }
 
@@ -861,6 +851,7 @@ body {
   font-weight: 900;
   line-height: 30px;
   text-align: center;
+  color: #3F3F3F;
 }
 
 .formats__title-desc {
@@ -935,12 +926,13 @@ body {
           align-items: flex-start;
   gap: 34px;
   padding: 0 30px;
+  margin-bottom: 10px;
 }
 
 .praxis__title-value {
   font-size: 64px;
   font-weight: 900;
-  line-height: 30px;
+  line-height: 53px;
   text-align: center;
 }
 
@@ -1056,10 +1048,12 @@ body {
   left: -157px;
 }
 
+.no-webp .reviews{
+  background: url("../img/reviews-bg.png") no-repeat center; }
+
 .reviews {
   margin: 0 10px;
-  padding: 30px 20px;
-  border: 2px dashed rgb(90, 176, 177);
+  padding: 35px 20px;
   border-radius: 18px;
 }
 
@@ -1093,8 +1087,8 @@ body {
 
 .reviews__item-avatar {
   position: absolute;
-  top: -20px;
-  left: -5px;
+  top: -25px;
+  left: -10px;
 }
 
 .reviews__item-text {
@@ -1195,6 +1189,19 @@ body {
   margin-bottom: 24px;
 }
 
+.no-webp .price .line{
+  background: url("../img/line2.png") no-repeat center; }
+
+.price .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+.price .line:last-of-type {
+  margin-bottom: 30px;
+}
+
 .price__item-advantages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1206,9 +1213,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 16px 30px;
-  border-bottom: 1px dashed rgb(194, 194, 194);
-  border-top: 1px dashed rgb(194, 194, 194);
-  margin-bottom: 30px;
 }
 
 .price__advantages-text {
@@ -1317,6 +1321,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
 }
 
 .price__list-text {
@@ -1326,9 +1333,9 @@ body {
 }
 
 .questions {
-  margin: 0 10px;
-  padding: 35px 20px 45px 20px;
-  border: 2px dashed rgb(90, 176, 177);
+  margin: 0 12px;
+  padding: 38px 20px 45px 20px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='18' ry='18' stroke='%235AB0B1FF' stroke-width='2' stroke-dasharray='8%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 18px;
 }
 
@@ -1671,7 +1678,6 @@ body {
           align-items: flex-end;
   gap: 20px;
   padding: 0 30px;
-  margin-bottom: 20px;
 }
 
 .all-reviews__item-person {
@@ -1679,7 +1685,7 @@ body {
   position: relative;
   font-size: 14px;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 18px;
 }
 
 .all-reviews__item-avatar {
@@ -1695,6 +1701,9 @@ body {
   color: #2B2B2B;
 }
 
+.no-webp .all-reviews__line{
+  background: url("../img/line2.png") no-repeat center; }
+
 .all-reviews__line {
   display: block;
   position: absolute;
@@ -1702,7 +1711,7 @@ body {
   left: 0;
   right: 0;
   width: 430px;
-  border: 1px dashed rgb(194, 194, 194);
+  height: 1px;
   z-index: 1;
 }
 
@@ -1745,6 +1754,7 @@ body {
 
 .all-reviews__history-text {
   width: 170px;
+  color: #2B2B2B;
 }
 
 .all-reviews__history-desc {
@@ -1856,9 +1866,17 @@ body {
 
 .webp .info__advantage-item::before{ background: url(../img/info-item-before.webp) no-repeat center; }
 
+.webp .chart{ background: url(../img/chart-bg.webp) no-repeat center; }
+
+.webp .chat__body > span{ background: url(../img/line.webp) no-repeat center; }
+
 .webp .formats__content{ background: url(../img/formats-bg.webp) no-repeat center; }
 
 .webp .praxis__item:first-of-type{ background: url(../img/praxis-item-bg.webp) no-repeat center; }
+
+.webp .reviews{ background: url(../img/reviews-bg.webp) no-repeat center; }
+
+.webp .price .line{ background: url(../img/line2.webp) no-repeat center; }
 
 .webp .reviews__numbers .numbers__image{ background: url(../img/numbers2-bg.webp) no-repeat; }
 
@@ -1869,3 +1887,5 @@ body {
 .webp .title{ background: url(../img/title-bg.webp) no-repeat center; }
 
 .webp .faq__title{ background: url(../img/title-faq-bg.webp) no-repeat center; }
+
+.webp .all-reviews__line{ background: url(../img/line2.webp) no-repeat center; }
