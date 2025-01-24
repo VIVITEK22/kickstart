@@ -635,12 +635,10 @@ body {
   text-align: center;
 }
 
-.no-webp .chart{
-  background: url("../img/chart-bg.png") no-repeat center; }
-
 .chart {
   margin: 10px;
-  padding-top: 32px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='18' ry='18' stroke='%23C2C2C2FF' stroke-width='2' stroke-dasharray='8%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 18px;
 }
 
 .chart__title {
@@ -649,7 +647,6 @@ body {
   line-height: 28px;
   text-align: center;
   padding: 20px;
-  padding-top: 0;
 }
 
 .chart__title-desc {
@@ -1048,12 +1045,10 @@ body {
   left: -157px;
 }
 
-.no-webp .reviews{
-  background: url("../img/reviews-bg.png") no-repeat center; }
-
 .reviews {
   margin: 0 10px;
-  padding: 35px 20px;
+  padding: 30px 20px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='18' ry='18' stroke='%235AB0B1FF' stroke-width='2' stroke-dasharray='8%2c 12' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 18px;
 }
 
@@ -1866,15 +1861,11 @@ body {
 
 .webp .info__advantage-item::before{ background: url(../img/info-item-before.webp) no-repeat center; }
 
-.webp .chart{ background: url(../img/chart-bg.webp) no-repeat center; }
-
 .webp .chat__body > span{ background: url(../img/line.webp) no-repeat center; }
 
 .webp .formats__content{ background: url(../img/formats-bg.webp) no-repeat center; }
 
 .webp .praxis__item:first-of-type{ background: url(../img/praxis-item-bg.webp) no-repeat center; }
-
-.webp .reviews{ background: url(../img/reviews-bg.webp) no-repeat center; }
 
 .webp .price .line{ background: url(../img/line2.webp) no-repeat center; }
 
