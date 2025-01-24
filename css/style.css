@@ -425,7 +425,7 @@ body {
   gap: 20px;
   padding-left: 10px;
   padding-bottom: 141px;
-  background: url("../img/info-baner.png") no-repeat;
+  background: url("../img/info-baner.svg") no-repeat;
   background-size: cover;
   background-position-x: center !important;
 }
@@ -515,7 +515,6 @@ body {
 .info__advantage-image {
   position: relative;
   z-index: 2;
-  margin-right: -45px;
 }
 
 .info__advantage-list {
@@ -573,7 +572,7 @@ body {
 
 .info__advantage-vector {
   position: absolute;
-  top: 2px;
+  top: -11px;
   right: 0;
   z-index: 1;
 }
@@ -1244,11 +1243,11 @@ body {
 
 .price__item-button {
   margin: 0 auto;
-  width: 390px;
-  font-size: 24px;
-  font-weight: 800;
+  width: 370px;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 28px;
-  height: 70px;
+  height: 60px;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1259,10 +1258,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 18px;
-  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
-  background: rgb(90, 176, 177);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(116, 208, 228)), color-stop(49.5%, rgb(90, 176, 177)), to(rgb(101, 205, 188)));
+  background: linear-gradient(90deg, rgb(116, 208, 228), rgb(90, 176, 177) 49.5%, rgb(101, 205, 188) 100%);
   margin-bottom: 30px;
 }
 
