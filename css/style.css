@@ -413,9 +413,6 @@ body {
   margin-bottom: 30px;
 }
 
-.no-webp .info__list{
-  background: url("../img/info-baner.png") no-repeat; }
-
 .info__list {
   padding-top: 18px;
   display: -webkit-box;
@@ -428,6 +425,7 @@ body {
   gap: 20px;
   padding-left: 10px;
   padding-bottom: 141px;
+  background: url("../img/info-baner.png") no-repeat;
   background-size: cover;
   background-position-x: center !important;
 }
@@ -462,9 +460,6 @@ body {
   width: 170px;
 }
 
-.no-webp .info__advantages{
-  background: url("../img/info-advantages-bg.png") no-repeat center; }
-
 .info__advantages {
   position: relative;
   z-index: 2;
@@ -478,6 +473,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 7px 30px 29px 30px;
+  background: url("../img/info-advantages-bg.png") no-repeat center;
   color: #fff;
   background-position-y: -1px !important;
 }
@@ -545,9 +541,6 @@ body {
   margin-left: -3px;
 }
 
-.no-webp .info__advantage-item::before{
-  background: url("../img/info-item-before.png") no-repeat center; }
-
 .info__advantage-item::before {
   content: "✓";
   display: -webkit-box;
@@ -561,6 +554,7 @@ body {
           align-items: center;
   width: 65px;
   height: 46px;
+  background: url("../img/info-item-before.png") no-repeat center;
   background-position-x: -2px !important;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -707,10 +701,8 @@ body {
           justify-content: space-between;
 }
 
-.no-webp .chat__body > span{
-  background: url("../img/line.png") no-repeat center; }
-
 .chat__body > span {
+  background: url("../img/line.png") no-repeat center;
   height: 2px;
   z-index: 1;
   width: 67px;
@@ -858,12 +850,10 @@ body {
   text-align: end;
 }
 
-.no-webp .formats__content{
-  background: url("../img/formats-bg.jpeg") no-repeat center; }
-
 .formats__content {
   padding-top: 61px;
   padding-bottom: 21px;
+  background: url("../img/formats-bg.jpeg") no-repeat center;
   background-size: cover;
 }
 
@@ -992,11 +982,9 @@ body {
   text-align: end;
 }
 
-.no-webp .praxis__item:first-of-type{
-  background: url("../img/praxis-item-bg.png") no-repeat center; }
-
 .praxis__item:first-of-type {
   height: 168px;
+  background: url("../img/praxis-item-bg.png") no-repeat center;
 }
 
 .praxis__item:first-of-type > .praxis__item-content {
@@ -1184,13 +1172,11 @@ body {
   margin-bottom: 24px;
 }
 
-.no-webp .price .line{
-  background: url("../img/line2.png") no-repeat center; }
-
 .price .line {
   display: block;
   width: 100%;
   height: 1px;
+  background: url("../img/line2.png") no-repeat center;
 }
 
 .price .line:last-of-type {
@@ -1504,26 +1490,20 @@ body {
   right: -40px;
 }
 
-.no-webp .reviews__numbers .numbers__image{
-  background: url("../img/numbers2-bg.png") no-repeat; }
-
 .reviews__numbers .numbers__image {
+  background: url("../img/numbers2-bg.png") no-repeat;
   background-position-x: 76% !important;
   height: 269px;
 }
 
-.no-webp .faq__numbers .numbers__image{
-  background: url("../img/faq-numbers-bg.png") no-repeat; }
-
 .faq__numbers .numbers__image {
+  background: url("../img/faq-numbers-bg.png") no-repeat;
   background-position-x: 59% !important;
   height: 230px;
 }
 
-.no-webp .numbers__image{
-  background: url("../img/numbers.png") no-repeat; }
-
 .numbers__image {
+  background: url("../img/numbers.png") no-repeat;
   background-position-x: 70% !important;
   height: 319px;
   width: 100%;
@@ -1563,8 +1543,9 @@ body {
   margin-bottom: 7px;
 }
 
-.no-webp .title{
-  background: url("../img/title-bg.png") no-repeat center; }
+.title {
+  background: url("../img/title-bg.png") no-repeat center;
+}
 
 .title__wrapper {
   display: -webkit-box;
@@ -1598,10 +1579,8 @@ body {
   max-width: 230px;
 }
 
-.no-webp .faq__title{
-  background: url("../img/title-faq-bg.png") no-repeat center; }
-
 .faq__title {
+  background: url("../img/title-faq-bg.png") no-repeat center;
   padding-top: 80px;
 }
 
@@ -1696,9 +1675,6 @@ body {
   color: #2B2B2B;
 }
 
-.no-webp .all-reviews__line{
-  background: url("../img/line2.png") no-repeat center; }
-
 .all-reviews__line {
   display: block;
   position: absolute;
@@ -1707,6 +1683,7 @@ body {
   right: 0;
   width: 430px;
   height: 1px;
+  background: url("../img/line2.png") no-repeat center;
   z-index: 1;
 }
 
@@ -1854,29 +1831,3 @@ body {
   font-weight: 400;
   line-height: 28px;
 }
-
-.webp .info__list{ background: url(../img/info-baner.webp) no-repeat; }
-
-.webp .info__advantages{ background: url(../img/info-advantages-bg.webp) no-repeat center; }
-
-.webp .info__advantage-item::before{ background: url(../img/info-item-before.webp) no-repeat center; }
-
-.webp .chat__body > span{ background: url(../img/line.webp) no-repeat center; }
-
-.webp .formats__content{ background: url(../img/formats-bg.webp) no-repeat center; }
-
-.webp .praxis__item:first-of-type{ background: url(../img/praxis-item-bg.webp) no-repeat center; }
-
-.webp .price .line{ background: url(../img/line2.webp) no-repeat center; }
-
-.webp .reviews__numbers .numbers__image{ background: url(../img/numbers2-bg.webp) no-repeat; }
-
-.webp .faq__numbers .numbers__image{ background: url(../img/faq-numbers-bg.webp) no-repeat; }
-
-.webp .numbers__image{ background: url(../img/numbers.webp) no-repeat; }
-
-.webp .title{ background: url(../img/title-bg.webp) no-repeat center; }
-
-.webp .faq__title{ background: url(../img/title-faq-bg.webp) no-repeat center; }
-
-.webp .all-reviews__line{ background: url(../img/line2.webp) no-repeat center; }
