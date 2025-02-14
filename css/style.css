@@ -102,97 +102,6 @@ a {
   z-index: 5;
 }
 
-@font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/Roboto-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-BoldItalic.woff2") format("woff2"), url("../fonts/Roboto-BoldItalic.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Roboto-ExtraBoldItalic.woff") format("woff");
-  font-weight: 800;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 body {
   font-family: Roboto;
   color: #626262;
@@ -222,10 +131,31 @@ body {
   padding: 26px 30px;
 }
 
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__logo-text {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 24px;
   font-style: italic;
+  color: #626262;
+}
+
+.header__logo-desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: -3px;
   color: #626262;
 }
 
@@ -291,6 +221,11 @@ body {
 
 .header__mobile .header__logo > .header__logo-text {
   font-size: 40px;
+}
+
+.header__mobile .header__logo > .header__logo-desc {
+  font-size: 20px;
+  margin-top: -4px;
 }
 
 .header__mobile .header__nav-list {
@@ -398,10 +333,6 @@ body {
   margin-top: 70px;
   padding-top: 20px;
   padding-bottom: 154px;
-}
-
-.main__all-reviews {
-  margin-top: 50px;
 }
 
 .info__title {
@@ -1215,8 +1146,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 40px 0 31px;
-  margin-bottom: 31px;
+  padding: 30px 40px 34.5px 30px;
 }
 
 .price__text {
@@ -1227,7 +1157,7 @@ body {
 
 .price__value-discount {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 23px;
   text-decoration-line: line-through;
   text-align: end;
@@ -1235,9 +1165,9 @@ body {
 }
 
 .price__value-current {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38px;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
   color: #414141;
 }
 
@@ -1273,6 +1203,7 @@ body {
           flex-direction: column;
   gap: 16px;
   padding-left: 28px;
+  margin-bottom: 30px;
 }
 
 .price__list-item {
@@ -1581,6 +1512,35 @@ body {
   padding-top: 80px;
 }
 
+.title__text-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 30px 23px 30px;
+  background: url("../img/bg.svg") no-repeat bottom;
+  margin-top: -1px;
+}
+
+.title__text-list span {
+  display: block;
+  background-color: #fff;
+  width: 1px;
+  height: 40px;
+}
+
+.title__text-item {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
 .all-reviews__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1777,12 +1737,27 @@ body {
 }
 
 .footer__logo {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 23px;
   font-style: italic;
   margin-bottom: 20px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__logo-desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-top: -3px;
+  color: #626262;
+  font-style: normal;
 }
 
 .footer__nav-list {
