@@ -322,7 +322,7 @@ body {
 }
 
 .main__questions {
-  margin-top: 53px !important;
+  margin-top: 40px !important;
 }
 
 .main__numbers {
@@ -340,7 +340,7 @@ body {
   font-weight: 800;
   line-height: 42px;
   font-style: italic;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 36px;
 }
 
@@ -388,7 +388,7 @@ body {
 }
 
 .info__item:last-of-type .info__item-text {
-  width: 170px;
+  width: 237px;
 }
 
 .info__advantages {
@@ -1186,7 +1186,6 @@ body {
           justify-content: center;
   background: -webkit-gradient(linear, left top, right top, from(rgb(116, 208, 228)), color-stop(49.5%, rgb(90, 176, 177)), to(rgb(101, 205, 188)));
   background: linear-gradient(90deg, rgb(116, 208, 228), rgb(90, 176, 177) 49.5%, rgb(101, 205, 188) 100%);
-  margin-bottom: 30px;
 }
 
 .price__item-list {
